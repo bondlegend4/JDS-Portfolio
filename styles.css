@@ -1,0 +1,87 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.upper-content {
+  min-height: 87vh; /* Adjust this value as needed to make sure the page is scrollable */
+  background-color: #a7d3c8; /* greenish light blue */
+}
+
+
+/* Above navbar background */
+body{
+  background-color: #a7d3c8;
+  /* greenish light blue */
+}
+
+/* Sticky nav effect */
+nav {
+  margin-left: auto;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #3b6978; /* sea blue */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s; /* Smooth transition for when navbar becomes fixed */
+  min-height: 10vh; /* Adjust this value as needed to make sure the page is scrollable */
+
+}
+
+/* Sidebar button styles */
+#sidebar-button {
+  background-color: inherit; /* Make it the same as navbar to blend in */
+  border: none; /* Removes border */
+  color: white; /* Set the color of the hamburger icon */
+  font-size: 1.5em; /* Adjust size as needed */
+  cursor: pointer; /* Change mouse pointer on hover */
+  padding: 0 15px; /* Add some padding */
+}
+
+/* Sidebar button hover effect */
+#sidebar-button:hover {
+  color: #3b6978; /* Color of the button text/icon on hover */
+  background-color: white; /* Background color of the button on hover */
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #76877d; /* Color of the nav a's text/icon on hover */
+  background-color: white; /* Background color of the nav a's on hover */
+}
+
+.navbar .buttons{
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Lower content is after the navigation bar*/
+.lower-content {
+  min-height: 100vh; /* Adjust this value as needed to make sure the page is scrollable */
+  background-color: #76877d; /* earthy greenish brown */
+}
+
+/*This class is implemented when you scroll down far enough*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Scroll back up and this is implemented*/
+.at-bottom {
+  position: static;
+}

@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JDS-Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
- <p>stuff is cool</p>
+
+	<div class="upper-content">
+		<!-- Content before navbar -->
+		<p>Your content goes here...</p>
+		<!-- More content to enable scrolling -->
+	</div>
+
+	<div id="navbar" class="navbar">
+		<button id="sidebar-button" class="buttons">☰</button>
+		<h1>JDS</h1>
+		<nav>
+			<a class="buttons" href="./webdev.html">Web Development</a>
+			<a class="buttons" href="./embedded.html">Embedded Systems</a>
+			<a class="buttons" href="./physical.html">Physical Modeling</a>
+		</nav>
+	</div>
+
+	<div class="lower-content">
+		<!-- Content after the navbar -->
+		<p>More content...</p>
+	</div>
+
+	<script src="index.js"></script>
 </body>
+
 </html>
