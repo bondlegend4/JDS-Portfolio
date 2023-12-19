@@ -75,13 +75,22 @@ nav a:hover {
 }
 
 /*This class is implemented when you scroll down far enough*/
-.sticky {
+.at-top {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-/* Scroll back up and this is implemented*/
+/*This class is implemented when you scroll down far enough*/
 .at-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Scroll back up and this is implemented*/
+.moving {
   position: static;
 }
+
+
