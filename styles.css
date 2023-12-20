@@ -1,19 +1,17 @@
 /* styles.css */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
 
 .upper-content {
-  min-height: 87vh; /* Adjust this value as needed to make sure the page is scrollable */
-  background-color: #a7d3c8; /* greenish light blue */
-}
-
-
-/* Above navbar background */
-body{
-  background-color: #a7d3c8;
-  /* greenish light blue */
+  min-height: 87vh;
+  /* Adjust this value as needed to make sure the page is scrollable */
+  background-image:
+    linear-gradient(to bottom, #8a989b, transparent 25%),
+    radial-gradient(farthest-corner at 50% 0%, #eaf7ec 25%, #8a989b 100%);
+  background-blend-mode: screen;
 }
 
 /* Sticky nav effect */
@@ -23,29 +21,40 @@ nav {
 
 /* Navbar styles */
 .navbar {
-  background-color: #3b6978; /* sea blue */
+  background-color: #224e74;
+  /* sea blue */
   display: flex;
   align-items: center;
   padding: 10px;
-  transition: all 0.3s; /* Smooth transition for when navbar becomes fixed */
-  min-height: 10vh; /* Adjust this value as needed to make sure the page is scrollable */
+  transition: all 0.3s;
+  /* Smooth transition for when navbar becomes fixed */
+  min-height: 10vh;
+  /* Adjust this value as needed to make sure the page is scrollable */
 
 }
 
 /* Sidebar button styles */
 #sidebar-button {
-  background-color: inherit; /* Make it the same as navbar to blend in */
-  border: none; /* Removes border */
-  color: white; /* Set the color of the hamburger icon */
-  font-size: 1.5em; /* Adjust size as needed */
-  cursor: pointer; /* Change mouse pointer on hover */
-  padding: 0 15px; /* Add some padding */
+  background-color: inherit;
+  /* Make it the same as navbar to blend in */
+  border: none;
+  /* Removes border */
+  color: white;
+  /* Set the color of the hamburger icon */
+  font-size: 1.5em;
+  /* Adjust size as needed */
+  cursor: pointer;
+  /* Change mouse pointer on hover */
+  padding: 0 15px;
+  /* Add some padding */
 }
 
 /* Sidebar button hover effect */
 #sidebar-button:hover {
-  color: #3b6978; /* Color of the button text/icon on hover */
-  background-color: white; /* Background color of the button on hover */
+  color: #3b6978;
+  /* Color of the button text/icon on hover */
+  background-color: white;
+  /* Background color of the button on hover */
 }
 
 h1 {
@@ -59,19 +68,23 @@ nav a {
 }
 
 nav a:hover {
-  color: #76877d; /* Color of the nav a's text/icon on hover */
-  background-color: white; /* Background color of the nav a's on hover */
+  color: #76877d;
+  /* Color of the nav a's text/icon on hover */
+  background-color: white;
+  /* Background color of the nav a's on hover */
 }
 
-.navbar .buttons{
+.navbar .buttons {
   padding: 5px;
   border-radius: 3px;
 }
 
 /* Lower content is after the navigation bar*/
 .lower-content {
-  min-height: 100vh; /* Adjust this value as needed to make sure the page is scrollable */
-  background-color: #76877d; /* earthy greenish brown */
+  min-height: 100vh;
+  /* Adjust this value as needed to make sure the page is scrollable */
+  background-color: #76877d;
+  /* earthy greenish brown */
 }
 
 /*This class is implemented when you scroll down far enough*/
@@ -92,5 +105,3 @@ nav a:hover {
 .moving {
   position: static;
 }
-
-
